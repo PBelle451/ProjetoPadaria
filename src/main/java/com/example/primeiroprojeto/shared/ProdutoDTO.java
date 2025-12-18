@@ -1,19 +1,15 @@
-package com.example.primeiroprojeto.model;
+package com.example.primeiroprojeto.shared;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+public class ProdutoDTO {
 
-@Entity
-public class Produto {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
+
     private String nome;
+
     private Integer quantidade;
+
     private Double valor;
+
     private String observacao;
 
     public Integer getId() {
@@ -43,7 +39,6 @@ public class Produto {
     public Double getValor() {
         return valor;
     }
-
     public void setValor(Double valor) {
         this.valor = valor;
     }
